@@ -12,7 +12,7 @@ def IPV42Str(ipv4):
 def WildCard(subnetmask):
     return ~Str2IPV4(subnetmask)
 
-def WildCardMask(subnetmask,netaddress):
+def BroadCast(subnetmask,netaddress):
     return ~Str2IPV4(subnetmask) | Str2IPV4(netaddress)
 
 
