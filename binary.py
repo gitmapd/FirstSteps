@@ -10,10 +10,8 @@ def IPV42Str(ipv4):
   return '.'.join(ipv4.astype(str))
 
 def WildCard(subnetmask):
-    return ~Str2IPV4(subnetmask)
+    return ~subnetmask
 
 def BroadCast(subnetmask,netaddress):
-    return ~Str2IPV4(subnetmask) | Str2IPV4(netaddress)
-
-
+    return ~subnetmask | netaddress
 
