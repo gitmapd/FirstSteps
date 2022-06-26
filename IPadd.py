@@ -8,5 +8,5 @@ if __name__=='__main__':
     ap.add_argument('--IP',help='Enter IP')
     ap.add_argument('--MASK', help='Enter MASK')
     args=ap.parse_args()
-    if args.IP and args.MASK is not None:
+    if args.IP is not None and args.MASK is not None:
         print(f"{Str2IPV4(args.IP)}, {Str2IPV4(args.MASK)}")
